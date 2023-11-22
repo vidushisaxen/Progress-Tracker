@@ -1,17 +1,17 @@
 
 document.addEventListener("DOMContentLoaded", function () {
-    var inputElement = document.getElementById("input-text");
-    var textElement = document.getElementById("percent");
-    var circleElement = document.querySelector("circle[stroke='#EB3349']");
-    var eligibleMsg = document.querySelector(".parent__card--msg--eligible");
-    var notEligibleMsg = document.querySelector(".parent__card--msg--not_eligible");
+    let inputElement = document.getElementById("input-text");
+    let textElement = document.getElementById("percent");
+    let circleElement = document.querySelector("circle[stroke='#EB3349']");
+    let eligibleMsg = document.querySelector(".parent__card--msg--eligible");
+    let notEligibleMsg = document.querySelector(".parent__card--msg--not_eligible");
 
   
     inputElement.addEventListener("input", function () {
        
-        var inputValue = inputElement.value;
+        let inputValue = inputElement.value;
         textElement.textContent = inputValue + "%";
-        var dashArray = (inputValue / 100) * 1069;
+        let dashArray = (inputValue / 100) * 1069;
         circleElement.setAttribute("stroke-dasharray", dashArray + " 1069");
 
         if (inputValue >= 40) {
