@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress track</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="parent">
+        <div class="parent__card">
+            <div class="parent__card--header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="25" viewBox="0 0 22 25" fill="none">
+                    <path d="M13.3191 22.1455L6.27822 14.3224H22V10.6777H6.27822L13.3191 2.85458L11 0.277832L0 12.5001L11 24.7223L13.3191 22.1455Z" fill="black"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
+                        <path d="M17.5 12C18.8807 12 20 10.8807 20 9.5C20 8.11929 18.8807 7 17.5 7C16.1193 7 15 8.11929 15 9.5C15 10.8807 16.1193 12 17.5 12Z" fill="black"/>
+                        <path d="M17.5 20C18.8807 20 20 18.8807 20 17.5C20 16.1193 18.8807 15 17.5 15C16.1193 15 15 16.1193 15 17.5C15 18.8807 16.1193 20 17.5 20Z" fill="black"/>
+                        <path d="M17.5 29C18.8807 29 20 27.8807 20 26.5C20 25.1193 18.8807 24 17.5 24C16.1193 24 15 25.1193 15 26.5C15 27.8807 16.1193 29 17.5 29Z" fill="black"/>
+                        </svg>                    
+            </div>
+            <div class="parent__card--heading">
+                <p>Marks</p>
+            </div>
+            <div class="parent__card--progress">
+                    <svg width="162" height="146" viewbox="0 0 440 440">
+                        <circle cx="220" cy="220" r="170" stroke-width="55" stroke="#f2f2f2" fill="none"></circle>
+                        <circle cx="220" cy="220" r="170" stroke-width="55" stroke-linecap="round" stroke="#EB3349" fill="none" transform="matrix(0,-1,1,0,0,440)" stroke-dasharray="0 1069">
+                        </circle>
+                      <text id="percent" x="220" y="265" text-anchor="middle" fill="#000000" >0%</text>
+                    </svg>
+            </div>
+            <div class="parent__card--msg">
+                <p class="parent__card--msg--eligible"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.2045 4.15347C17.534 4.4045 17.5976 4.87509 17.3466 5.20457L9.34657 15.7046C9.21541 15.8767 9.01627 15.9838 8.80033 15.9983C8.58439 16.0129 8.37271 15.9334 8.21967 15.7804L3.71967 11.2804C3.42678 10.9875 3.42678 10.5126 3.71967 10.2197C4.01256 9.92682 4.48744 9.92682 4.78033 10.2197L8.67351 14.1129L16.1534 4.29551C16.4045 3.96603 16.8751 3.90243 17.2045 4.15347Z" fill="#5DCA07"/>
+                    </svg>
+                You are eligible.</p>
+                <p class="parent__card--msg--not_eligible"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="34" viewBox="0 0 35 34" fill="none">
+                    <path d="M13.2279 12.7279L21.7132 21.2132M21.7132 12.7279L13.2279 21.2132" stroke="#FF004D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                You are not eligible.</p>
+            </div>
+            <div class="parent__card--footer">
+                <div class="parent__card--footer--input">
+                    <p>PERCENT</p>
+                    <input  type="number" placeholder=" Input percentage" id="input-text">
+                </div>
+            <div class="parent__card--footer--marks">
+                <span><div class="parent__card--footer--marks--colored"></div>Marks obtained</span>
+                <span><div class="parent__card--footer--marks--uncolored"></div>Marks deducted</span>
+            </div>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
