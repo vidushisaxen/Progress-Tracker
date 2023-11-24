@@ -66,16 +66,17 @@
         &--msg{
             display: flex;
             flex-direction: column;
+            svg{
+                margin-right: 8px;
+            }
             &--eligible{
                 display: none;
-
             }
             &--not_eligible{
                 display: block;
                 display: flex;
                justify-content: center;
              align-items: center;
-
             }
         }
 
@@ -84,6 +85,7 @@
             flex-direction: row;
             justify-content: space-around;
             align-items: center;
+            padding-bottom: 25px;
             &--input{
                 display: flex;
                 flex-direction: column;
@@ -93,21 +95,26 @@
                     font-size: 11px;
                     font-style: normal;
                     font-weight: 500;
-                    line-height: 17px; /* 154.545% */
+                    line-height: 17px;
                     letter-spacing: 0.5px;
                     text-transform: uppercase;
+                    margin-bottom: 5px;
                 }
                 input{
                     display: flex;
                     width: 125px;
                     height: 45px;
-                    padding-left: 20px;
+                    padding-left: 10px;
                     align-items: center;
                     border-radius: 10px;
                     border: 0px solid #000;
                     background: #F2F2F2;
                     outline: none;
                     margin-bottom: 20px;
+                    color: #78858F;
+                    font-size: 12px;
+                    letter-spacing: 0.5px;
+                    line-height: 23px;
                 }
             }
             &--marks{
